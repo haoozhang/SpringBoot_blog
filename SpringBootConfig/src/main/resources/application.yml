@@ -1,0 +1,13 @@
+# config Person using YAML
+person:
+  name: zhao${random.uuid}  # 随机 uuid
+  age: ${random.int}  # 随机 int
+  flag: false
+  birth: 2020/02/02
+  map: {k1: v1,k2: v2}
+  list:
+    - coding
+    - lanmei
+  dog:
+    name: ${person.hello:other}-wangcai  # 如果 person.hello 属性存在就为 ${person.hello}-wangcai, 否则为 other-wangcai
+    age: 3
