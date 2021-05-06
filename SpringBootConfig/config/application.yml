@@ -1,0 +1,22 @@
+server:
+  port: 8081
+#选择要激活的环境块
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+  port: 8083
+spring:
+  config:
+    activate:
+      on-profile: dev  #配置环境的名称
+
+---
+server:
+  port: 8084
+spring:
+  config:
+    activate:
+      on-profile: prod  #配置环境的名称
