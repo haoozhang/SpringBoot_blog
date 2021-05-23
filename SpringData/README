@@ -1,0 +1,25 @@
+1. 通过 Spring Initializr 新建 Spring Boot 项目
+2. 在主启动类相同目录下新建 controller 包，编写 HelloController
+
+------
+
+- YAML 配置注入
+- 多环境切换
+- 数据校验？
+
+------
+
+- 静态资源
+- 首页
+- 国际化
+- 登录
+- 拦截器
+- CRUD
+- 404 处理
+- 注销
+
+------
+
+- 整合 JDBC: JdbcTemplate
+- 整合 Druid: 数据源配置、监控配置
+- 整合 Mybatis:

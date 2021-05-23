@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhao.mapper.TeacherMapper">
+
+  <select id="selectAllTeacher" resultType="Teacher">
+    select * from Teacher
+  </select>
+
+  <select id="selectTeacherById" resultType="Teacher">
+      select * from Teacher where id = #{id}
+  </select>
+
+  <insert id="addTeacher" parameterType="Teacher">
+      insert into Teacher(id, name) values (#{id}, #{name})
+  </insert>
+
+  <update id="updateTeacher" parameterType="Teacher">
+      update Teacher set name = #{name} where id = #{id}
+  </update>
+
+  <delete id="deleteTeacher" parameterType="int">
+      delete from Teacher where id = #{id}
+  </delete>
+
+</mapper>
